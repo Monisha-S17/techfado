@@ -13,7 +13,7 @@ import { HeaderComponent } from './shared/header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
