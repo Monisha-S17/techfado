@@ -6,12 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solution.component.css']
 })
 export class SolutionComponent implements OnInit {
+  router: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
+  // gotopage(){
+  //   this.router.navigate(['service/ivr']);
+  // }
   
 
 }

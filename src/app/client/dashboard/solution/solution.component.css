@@ -7,8 +7,8 @@ section {
 }
 
 .section-bg {
-  /* background-color: #f6f9fe; */
-  background-color: linear-gradient(#fff, #2977ff)
+  background-color: #f6f9fe;
+  /* background-color: linear-gradient(#fff, #2977ff) */
 }
 
 .section-title {
@@ -64,7 +64,7 @@ section {
   position: relative;
   overflow: hidden;
   /* background: #f6f9fe; */
-    background-image: linear-gradient(to bottom right,  #fff, #edf3ff,#eef3fd,#d4e3fe,#a4c4fb,#94bafa );
+    background-image: linear-gradient(to bottom right,  #fff, #edf3ff,#eef3fd,#d4e3feda,#abcaff );
 
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;

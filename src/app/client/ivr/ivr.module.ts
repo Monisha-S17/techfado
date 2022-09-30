@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { IvrRoutingModule } from './ivr-routing.module';
 import { IvrComponent } from './ivr.component';
+
+import {MatCardModule} from '@angular/material/card';
+
+// import { IvrRoutingModule } from './ivr-routing.module';
+
 
 
 @NgModule({
@@ -11,7 +14,9 @@ import { IvrComponent } from './ivr.component';
   ],
   imports: [
     CommonModule,
-    IvrRoutingModule
+    MatCardModule,
+   
+    // IvrRoutingModule
   ]
 })
 export class IvrModule { }
