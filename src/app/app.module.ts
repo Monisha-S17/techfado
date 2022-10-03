@@ -15,11 +15,16 @@ import { ReportComponent } from './client/report/report.component';
 import { CrmComponent } from './client/crm/crm.component';
 import { IvrComponent } from './client/ivr/ivr.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AboutUsComponent } from './client/dashboard/about-us/about-us.component'
 
 
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -34,7 +39,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     OutboundComponent,
     ReportComponent,
     CrmComponent,
-    IvrComponent
+    IvrComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -42,7 +48,11 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     VoiceSystemModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDividerModule,
+    MatExpansionModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

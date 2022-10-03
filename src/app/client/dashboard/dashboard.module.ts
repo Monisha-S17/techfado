@@ -5,7 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ClientComponent } from './client/client.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+// import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CountsComponent } from './counts/counts.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
@@ -16,13 +16,19 @@ import { TeamComponent } from './team/team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
+
+
 
 @NgModule({
   declarations: [
     DashboardComponent,
     AboutUsComponent,
     ClientComponent,
-    ContactUsComponent,
+    // ContactUsComponent,
     CountsComponent,
     FaqComponent,
     HomeComponent,
@@ -35,7 +41,10 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatExpansionModule
   ]
 })
 export class DashboardModule { }

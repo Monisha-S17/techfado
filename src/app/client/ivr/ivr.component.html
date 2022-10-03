@@ -1,29 +1,181 @@
-<div id="ivr">
-    <main id="main">
-        <section class="section-bg">
-            <div class="container">
-                <div class="section-title">
-                    <h2>IVR</h2>
-                    <h3><span>Interactive Voice Response</span></h3>
+<div id="ivr" class="ivr">
+  <div class="slider">
+    <input type="radio" class="slide" id="slide-1" name="slide" checked>
+    <input type="radio" class="slide" id="slide-2" name="slide">
+    <input type="radio" class="slide" id="slide-3" name="slide">
+    <div class="slides">    
+
+      <div class="slide slide-1"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+    </div>
+
+  
+    <div class="arrows arrow-left">
+      <label for="slide-3">
+        <span><i class="fa-solid fa-chevron-left"></i></span>
+      </label>
+      <label for="slide-1">
+        <span><i class="fa-solid fa-chevron-left"></i></span>
+      </label>
+      <label for="slide-2">
+        <span><i class="fa-solid fa-chevron-left"></i></span>
+      </label>
+    </div>
+    <div class="arrows arrow-right">
+      <label for="slide-2">
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+      </label>
+      <label for="slide-1">
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+      </label>
+      <label for="slide-3">
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+      </label>
+    </div>
+  </div>
+
+  
+    <section class="section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h3>Interactive Voice Response</h3>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">           
+
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Interactive Voice Response (IVR) is a technology to automate your inbound calls by allowing businesses to interact with customers through pre-recorded voice messages with DTMF input using a keypad. An IVR system interacts with callers, gathers some essential information, and routes call to the appropriate agents.                  </p>
+                </div>
+              </li>
+  
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Why Do Businesses Need IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    There are a number of benefits of an IVR software solution for different industries. For eg. A banking IVR can be used by customers to know their bank balance while freeing the customer service executive time to manage critical queries. Among others, an IVR solution helps to increase customer service efficiency, handle incoming call spikes, boost customer satisfaction when complemented with auto call backs. If set up correctly it can uplift your customer experience.
+                  </p>
+                </div>
+              </li>
+  
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What are different types of IVR System? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <div class="list">
+                    <h6>IVR FOR SELF-SERVICE</h6>
+                  <p>
+                      An IVR System or automated voice 
+  allows businesses to service high 
+  call volumes at a lower cost. It can 
+  identify and route callers, and resolve 
+  their queries without transferring 
+  to a live agent. Calls are transferred 
+  to live agents only when the caller 
+  requires further assistance
+                  </p>
+                  <h6>HOSTED IVR</h6>
+                  <p>
+                    When an IVR solution is installed 
+                    on a hosted software platform, 
+                    it allows businesses to access the 
+                    IVR application on the internet. This 
+                    enables businesses to deliver 24/7 
+                    customer service, even after office 
+                    hours. It helps you gain loyalty 
+                    and improve customer satisfaction 
+                    rates.
                     
-                </div>
-                <div class="section-content">
-                    <h6>What is IVR?</h6>
-                    <p>Interactive Voice Response (IVR) is a technology to automate your inbound calls by allowing businesses to interact with customers through pre-recorded voice messages with DTMF input using a keypad. An IVR system interacts with callers, gathers some essential information, and routes call to the appropriate agents.</p>
-                </div>
-               
+                  </p>
+                  <h6> AGENT-ASSISTED IVR</h6>
+                  <p>
+                    An agent-assisted IVR software 
+                    helps a contact center to optimize 
+                    its operational costs while delivering 
+                    consistent customer service. The 
+                    agent can dynamically direct 
+                    pre-recorded messages to initiate 
+                    a conversation with the customer, 
+                    without the customer knowing about 
+                    the agent’s involvement.
+                    
+                    
+                  </p>
 
-                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-                    <mat-button-toggle value="bold">Bold</mat-button-toggle>
-                    <mat-button-toggle value="italic">Italic</mat-button-toggle>
-                    <mat-button-toggle value="underline">Underline</mat-button-toggle>
-                </mat-button-toggle-group>
+
+                  </div>
+                  
+                </div>
+              </li>
+  
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">When Do Businesses Use an IVR Number? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <div class="list">
+                    <h6>Automate Customer Care</h6>
+                  <p>
+                    Provide the callers with an 
+                    option to self-serve while 
+                    automating routine queries
+                  </p>
+                  <h6>Collect Feedback</h6>
+                  <p>
+                    An IVR dialer is an effective 
+channel to gather callers’ 
+feedback or run a survey  
+                  </p>
+
+                  <h6> After Hours Customer Support</h6>
+                  <p>
+                    Play a pre-recorded message 
+mentioning you are closed 
+and your office timings 
+for post office hours calls </p>
+
+                  <h6> Personalized Experience</h6>
+                  <p>
+                    Customize your IVR flow and 
+messaging based on callers’ 
+region, transaction history, 
+or other relevant factors</p>
+
+<h6>Reduce Operational Costs</h6>
+                  <p>
+                    IVR systems replace a 
+receptionist or a customer 
+service agent who answers 
+calls and directs calls to 
+agents </p>
+
+<h6> Improve First Call Resolution</h6>
+                  <p>
+                    Direct callers to the most 
+appropriate department and 
+qualified agent to avoid call 
+transfer and increase 
+customer satisfaction </p>
+
+
+
+                  </div>
+                  
+                </div>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+  
     
-            </div>
-        </section>
-    </main>
 </div>
-
-
-
-

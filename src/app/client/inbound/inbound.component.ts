@@ -11,5 +11,8 @@ export class InboundComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onSumbit(){
+    console.log('hi');
+  }
 
 }

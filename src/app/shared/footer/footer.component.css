@@ -4,9 +4,9 @@
 #footer {
     background: #fff;
     padding: 0 0 30px 0;
-    color: #444444;
+    color: #fff;
     font-size: 14px;
-    background: #f1f6fe;
+    background: #00223c;
   }
   
   #footer .footer-newsletter {
@@ -139,7 +139,7 @@
   #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #106eea;
+    background: #00223c;
     color: #fff;
     line-height: 1;
     padding: 8px 0;

@@ -1,0 +1,107 @@
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+  /* section {
+    padding: 60px 0;
+    overflow: hidden;
+  } */
+  
+  
+  /* body {
+    padding: 20px;
+    background: #eee;
+    user-select: none;
+  } */
+  
+  mat-panel-title{
+    font-weight:500;
+  }
+  mat-expansion-panel p{
+    line-height: 1.5;
+  }
+  
+  /* Slider */
+  
+  [type=radio] {
+    display: none;
+  }
+  
+  #slider {
+    height: 30vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  @media only screen and (max-width: 900px) {
+    #slider {
+      height: 33vh;
+    }
+  }
+  
+  #slider label {
+    color:#fff;
+    margin: auto;
+    width: 250px;
+    height: auto;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  } 
+  #slider label div{
+    padding: 15%;
+  }
+  
+  #s11:checked ~ #slide12, #s12:checked ~ #slide11,
+  #s13:checked ~ #slide11
+  {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-55%,0,-200px);
+  }
+  
+  #s11:checked ~ #slide13{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-15%,0,-200px);
+  }
+  
+  #s11:checked ~ #slide13, #s12:checked ~ #slide11,
+  #s13:checked ~ #slide12, #s4:checked ~ #slide13,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-55%,0,-100px);
+  }
+  
+  #s11:checked ~ #slide11, #s12:checked ~ #slide12,
+  #s13:checked ~ #slide13 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+  }
+  
+  #s11:checked ~ #slide12, #s12:checked ~ #slide13,
+  #s13:checked ~ #slide11 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(55%,0,-100px);
+  }
+  
+  #s13:checked ~ #slide11, #s11:checked ~ #slide13, #s12:checked ~ #slide4,
+  #s13:checked ~ #slide5, #s4:checked ~ #slide11,
+  #s5:checked ~ #slide12 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(50%,0,-200px);
+  }
+  
+  #slide11 { background: linear-gradient(to bottom right, #1265b7, #2683e0, #429af3, #6eb5fc)}
+  #slide12 { background:  linear-gradient(to bottom right, #1265b7, #2683e0, #429af3, #6eb5fc) }
+  #slide13 { background:  linear-gradient(to bottom right, #1265b7, #2683e0, #429af3, #6eb5fc)}
+  
+  
+  h5{
+    font-size:16px;
+    /* background: linear-gradient(#1265b7, #2683e0, #429af3); */
+  }
+  
+  .slider-question{
+    font-weight: 500;
+  }

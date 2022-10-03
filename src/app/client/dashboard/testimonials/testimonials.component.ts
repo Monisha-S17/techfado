@@ -11,5 +11,7 @@ export class TestimonialsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onSumbit(){
+    
+  }
 }
