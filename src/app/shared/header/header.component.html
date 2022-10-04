@@ -17,11 +17,26 @@
               <ul>
                 <li><a class="nav-link  active" routerLink="dashbord/home" routerLinkActive="badge-primary"   href="" >Home</a></li>
                 <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/about" routerLinkActive="badge-primary"  href="">About</a></li>
-                <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/service" routerLinkActive="badge-primary"  href="#service">Services</a></li>
+                <li  (mouseleave)="closeSubDropdown()" ><a class="nav-link scrollto page-scroll nav-link-service" routerLink="dashbord/service" routerLinkActive="badge-primary"  href="#service"  (mouseover)="callSubDropdown()">Services</a>
+                  <div class="sub-dropdown" [class.subMenu]="subMenu"  (mouseover)="callSubDropdown()">
+                    <ul class="d-flex " (click)="closeSubDropdown()">
+                      <li><a class="nav-link scrollto page-scroll" routerLink="ivr" routerLinkActive="badge-primary"  href="">IVR</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="chat" routerLinkActive="badge-primary"  href="">Chat</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="email" routerLinkActive="badge-primary"  href="">Email</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="socialmedia" routerLinkActive="badge-primary"  href="">SocialMedia</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="inbound" routerLinkActive="badge-primary"  href="">Inbound</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="outbound" routerLinkActive="badge-primary"  href="">Outbound</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="report" routerLinkActive="badge-primary"  href="">Omnichannel Reporting</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="crm" routerLinkActive="badge-primary"  href="">CRM Integrations</a></li>
+                      <li><a class="nav-link scrollto page-scroll" routerLink="voiceSystem" routerLinkActive="badge-primary"  href="">Voice System </a></li>
+                    </ul>
+                  </div>
+                  
+                </li>
+                
                 <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/contact" routerLinkActive="badge-primary"  href="#contact">Contact</a></li>
                 <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/faq"  routerLinkActive="badge-primary" href="#faq">FAQ</a></li>
 
-                <!-- <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/price" routerLinkActive="badge-primary"  href="#price">Price</a></li> -->
 
                 
               </ul>

@@ -7,13 +7,19 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
-
-  constructor() { }
+  siteKey:string;
+  isDisable:boolean =true;
+  // formModel = new MyFormModel();
+  constructor() {
+    this.siteKey ="6LefZVIiAAAAAH_GVszATvltil87Y1uMwcvSPX-9" 
+   }
 
   ngOnInit(): void {
   }
   onSumbit(userForm:NgForm){
-    console.log(userForm)
+    
+
+    console.log(userForm);
     
   }
 

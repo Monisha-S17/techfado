@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   menuVariable:boolean = false;
   menuIconVariable:boolean=false;
+  subMenu : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +16,19 @@ export class HeaderComponent implements OnInit {
   openMenu(){
     this.menuVariable =! this.menuVariable ;
     this.menuIconVariable =! this.menuIconVariable
+  }
+
+  callSubDropdown(){
+    this.subMenu = true;
+
+  }
+
+  closeSubDropdown(){
+    this.subMenu = false;
+    this.menuVariable =! this.menuVariable ;
+    this.menuIconVariable =! this.menuIconVariable
+
+
   }
 
 }

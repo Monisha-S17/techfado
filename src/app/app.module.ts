@@ -24,6 +24,12 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactUsComponent } from './client/contact-us/contact-us.component';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { NgxCaptchaModule } from 'ngx-captcha';
+// import { RecaptchaModule } from "ng-recaptcha";
+
+// import { BotDetectCaptchaModule } from 'angular-captcha'; 
+
 
 
 
@@ -54,7 +60,12 @@ import { ContactUsComponent } from './client/contact-us/contact-us.component';
     MatDividerModule,
     MatExpansionModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    NgxCaptchaModule,
+    // BotDetectCaptchaModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
