@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-ivr',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IvrComponent implements OnInit {
 
-  constructor() { }
+  
+  
 
+  constructor() {
+   }
+
+   
   ngOnInit(): void {
+    
+
   }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
 
 }

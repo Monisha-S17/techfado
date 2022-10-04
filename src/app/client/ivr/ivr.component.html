@@ -1,41 +1,37 @@
-<div id="ivr" class="ivr">
-  <div class="slider">
-    <input type="radio" class="slide" id="slide-1" name="slide" checked>
-    <input type="radio" class="slide" id="slide-2" name="slide">
-    <input type="radio" class="slide" id="slide-3" name="slide">
-    <div class="slides">    
-
-      <div class="slide slide-1"></div>
-      <div class="slide slide-2"></div>
-      <div class="slide slide-3"></div>
-    </div>
-
+<div id="inbound" class="ivr">
   
-    <div class="arrows arrow-left">
-      <label for="slide-3">
-        <span><i class="fa-solid fa-chevron-left"></i></span>
-      </label>
-      <label for="slide-1">
-        <span><i class="fa-solid fa-chevron-left"></i></span>
-      </label>
-      <label for="slide-2">
-        <span><i class="fa-solid fa-chevron-left"></i></span>
-      </label>
-    </div>
-    <div class="arrows arrow-right">
-      <label for="slide-2">
-        <span><i class="fa-solid fa-chevron-right"></i></span>
-      </label>
-      <label for="slide-1">
-        <span><i class="fa-solid fa-chevron-right"></i></span>
-      </label>
-      <label for="slide-3">
-        <span><i class="fa-solid fa-chevron-right"></i></span>
-      </label>
-    </div>
-  </div>
+  <div id="demo" class="carousel slide " data-bs-ride="carousel">
 
-  
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="/assets/img/ivr/bg-1.jpg" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/ivr/bg-2.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/ivr/bg-3.jpg" alt="New York" class="d-block w-100">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+
     <section class="section-bg">
       <div class="container">
         <div class="section-title">
@@ -48,16 +44,16 @@
             <ul class="faq-list">
 
               <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
-                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <div data-bs-toggle="collapse" class="collapsed question" href="#que1">What is IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="que1" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Interactive Voice Response (IVR) is a technology to automate your inbound calls by allowing businesses to interact with customers through pre-recorded voice messages with DTMF input using a keypad. An IVR system interacts with callers, gathers some essential information, and routes call to the appropriate agents.                  </p>
                 </div>
               </li>
   
               <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Why Do Businesses Need IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
-                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <div data-bs-toggle="collapse" href="#que2" class="collapsed question">Why Do Businesses Need IVR? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="que2" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     There are a number of benefits of an IVR software solution for different industries. For eg. A banking IVR can be used by customers to know their bank balance while freeing the customer service executive time to manage critical queries. Among others, an IVR solution helps to increase customer service efficiency, handle incoming call spikes, boost customer satisfaction when complemented with auto call backs. If set up correctly it can uplift your customer experience.
                   </p>
@@ -65,8 +61,8 @@
               </li>
   
               <li>
-                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What are different types of IVR System? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
-                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <div data-bs-toggle="collapse" href="#que3" class="collapsed question">What are different types of IVR System? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="que3" class="collapse" data-bs-parent=".faq-list">
                   <div class="list">
                     <h6>IVR FOR SELF-SERVICE</h6>
                   <p>
@@ -114,8 +110,8 @@
               </li>
   
               <li>
-                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">When Do Businesses Use an IVR Number? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
-                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <div data-bs-toggle="collapse" href="#que4" class="collapsed question">When Do Businesses Use an IVR Number? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                <div id="que4" class="collapse" data-bs-parent=".faq-list">
                   <div class="list">
                     <h6>Automate Customer Care</h6>
                   <p>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IvrComponent } from './ivr.component';
 
 import {MatCardModule} from '@angular/material/card';
 
@@ -10,7 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    IvrComponent
+    
   ],
   imports: [
     CommonModule,

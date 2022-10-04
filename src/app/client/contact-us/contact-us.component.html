@@ -1,0 +1,108 @@
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact section-bg">
+    <div class="container" >
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <h3><span>Contact Us</span></h3>
+        
+      </div>
+
+      <div class="row" >
+        <div class="col-lg-6 ">
+          <div class="info-box mb-4 bg-white" >
+            <i class="fa-sharp fa-solid fa-location-dot locationIcon" ></i>            
+            <h3>Our Address</h3>
+            <p>Plot no 341,
+              2nd cross street,
+              Sai ganesh nagar,
+              Pallikaranai,
+              Chennai-100</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4 bg-white" >
+            <i class="fa-solid fa-envelope"></i>            
+            <h3>Email Us</h3>
+            <p>info@techfado.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4 bg-white">
+            <i class="fa-solid fa-phone"></i>            
+            <h3>Call Us</h3>
+            <p>+91 9600000210</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" >
+
+        <div class="col-lg-6 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.16492517432!2d80.1950937!3d13.088732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526405bbd106b7%3A0xd063938ec8ad22f!2s1204%2C%2017th%20St%2C%20Thirumagal%20Colony%2C%20Chennai%2C%20Tamil%20Nadu%20600101!5e0!3m2!1sen!2sin!4v1664647496725!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-6 bg-white px-1">
+          <form  class="php-email-form" #userForm ="ngForm" novalidate (ngSubmit)="onSumbit(userForm)">
+            <div class="row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"  autocomplete="off" ngModel required>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" autocomplete="off" ngModel required email>
+              </div>
+            </div>
+            <div class="col form-group">
+              <input type="tel" id="phone" name="phone" class="form-control"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Mobile Number"  ngModel required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" ngModel required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" ngModel required></textarea>
+            </div>
+            
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        
+        
+        <!-- <form  novalidate (ngSubmit)="onSumbit()">
+            <h2>Form</h2>
+            <div class=" row my-2">
+                <div class="col-6 form-group">
+                    <input type="text" placeholder="Name" name="userName" class="form-control" ngForm>
+                </div>
+                <div class="col-6 form-group">
+                    <input type="email" class="form-control" placeholder="Enter mail id" name="email" ngForm>
+                </div>
+            </div>
+            <div class=" row my-2">
+                <div class="col-12 form-group">
+                    <input type="text" class="form-control" placeholder="Enter phon number" name="mobilNumber" ngForm>
+                </div>
+            </div>
+            <div class=" row my-2">
+                <div class="col-12 form-group">
+                    <input type="text" class="form-control" placeholder="subject" name="message" name="subject" ngForm>
+                </div>
+            </div>
+            <div class=" row my-2">
+                <div class="col-12 form-group"><textarea name="message" id="message" cols="30"  row my-2s="10" class="form-control" ngForm></textarea></div>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+         -->
+        
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->

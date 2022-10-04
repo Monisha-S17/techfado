@@ -1,28 +1,80 @@
-<div class="container">
-    <form  novalidate (ngSubmit)="onSumbit()">
-        <h2>Form</h2>
-        <div class=" row my-2">
-            <div class="col-6 form-group">
-                <input type="text" placeholder="Name" name="userName" class="form-control" ngForm>
-            </div>
-            <div class="col-6 form-group">
-                <input type="email" class="form-control" placeholder="Enter mail id" name="email" ngForm>
-            </div>
+<div id="inbound" class="inbound">
+    <div id="demo" class="carousel slide " data-bs-ride="carousel">
+  
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+  
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="/assets/img/ivr/bg-1.jpg" alt="Los Angeles" class="d-block w-100">
         </div>
-        <div class=" row my-2">
-            <div class="col-12 form-group">
-                <input type="text" class="form-control" placeholder="Enter phon number" name="mobilNumber" ngForm>
+        <div class="carousel-item">
+          <img src="/assets/img/ivr/bg-2.jpg" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/ivr/bg-3.jpg" alt="New York" class="d-block w-100">
+        </div>
+      </div>
+  
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+      
+        <section class="section-bg">
+          <div class="container">
+            <div class="section-title">
+              <h3>Inbound</h3>
             </div>
-        </div>
-        <div class=" row my-2">
-            <div class="col-12 form-group">
-                <input type="text" class="form-control" placeholder="subject" name="message" name="subject" ngForm>
+    
+            <div class="row justify-content-center">
+              <div class="col-xl-10">           
+    
+                <ul class="faq-list">
+                    <li>
+                        <div data-bs-toggle="collapse" href="#que1" class="collapsed question">What are different types of IVR System? <i class="fa-solid fa-angle-down icon-show"></i><i class="fa-solid fa-angle-up icon-close"></i></div>
+                        <div id="que1" class="collapse" data-bs-parent=".faq-list">
+                          <div class="list">
+                            <h6>Route Customer Queries to the Best Available Agent</h6>
+                          <p>
+                            Provide a superior customer experience by routing your customers to the right agents. Achieve a higher level of First Call Resolution (FCR) and increased CSAT with intelligent routing algorithms like preferred agent routing (Sticky Agent Routing), Skill-based routing (Route based on an Agents Skill parameters), and customer persona-based routing (Route dynamically based on CRM input).
+                          </p>
+                          <h6>Help Anxious Customers with an Interactive IVR</h6>
+                          <p>
+                            Help customers with personalized voice prompt as answers to most of their queries with a self-service IVR, without the need to involve your agents. Choose from a Simple IVR, Multi-level IVR, and even a Dynamic IVR, so you can customize your workflow as per your business. Few highlights being, office hours configuration, custom welcome prompts, queue management, prioritized routing, dynamic IVR.
+                            
+                          </p>
+                          <h6>Empower Agents to Deliver a Personalized Contact Center Experience</h6>
+                          <p>
+                            Inbound call center software solution provides a unified agent desktop, a cross channel view, CTI & CRM view, enabling your Agents to have contextual inbound interactions. As agents have access to customer information like previous interaction history, contact information, it enables them to understand the customer context and have smart conversations with customers.  
+                          </p>
+                          <h6>Measure and Scale your Inbound Call Center Operations</h6>
+                          <p>
+                            Monitor real-time productivity of inbound Agents with built-in real-time channel monitoring via Voice & Chat. The managers or supervisors can check the Agent efficiency in real-time by snooping, barging, whispering, and conferring the live call and chat channels.
+                          </p>
+        
+        
+                          </div>
+                          
+                        </div>
+                    </li>
+                </ul>
+      
+              </div>
             </div>
-        </div>
-        <div class=" row my-2">
-            <div class="col-12 form-group"><textarea name="message" id="message" cols="30"  row my-2s="10" class="form-control" ngForm></textarea></div>
-        </div>
-        <button class="btn btn-primary">Submit</button>
-    </form>
-</div>
-
+    
+    
+          </div>
+    
+        </section>
+      
+        
+    </div>

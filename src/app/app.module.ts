@@ -23,6 +23,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactUsComponent } from './client/contact-us/contact-us.component';
 
 
 
@@ -40,7 +41,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReportComponent,
     CrmComponent,
     IvrComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

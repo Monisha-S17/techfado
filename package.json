@@ -29,6 +29,7 @@
     "@nguniversal/express-engine": "^14.2.0",
     "bootstrap": "^5.2.1",
     "express": "^4.15.2",
+    "ng-recaptcha": "^10.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "url-polyfill": "^1.1.12",
