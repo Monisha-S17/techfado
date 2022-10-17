@@ -24,12 +24,14 @@ export class HeaderComponent implements OnInit {
   }
 
   closeDropdown(){
-    alert();
     this.subMenu = false;
     this.menuVariable =! this.menuVariable ;
     this.menuIconVariable =! this.menuIconVariable
 
 
+  }
+
+  SubDropdown(){
   }
 
   closeSubDropdown(){
