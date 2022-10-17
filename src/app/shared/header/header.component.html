@@ -15,9 +15,9 @@
             </div>
             <div class="menu text-end" [class.menuClass]="menuVariable" (click)="openMenu()">
               <ul>
-                <li><a class="nav-link  active" routerLink="dashbord/home" routerLinkActive="badge-primary"   href="" >Home</a></li>
-                <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/about" routerLinkActive="badge-primary"  href="">About</a></li>
-                <li  (mouseleave)="closeSubDropdown()" ><a class="nav-link scrollto page-scroll nav-link-service" routerLink="dashbord/service" routerLinkActive="badge-primary"  href="#service"  (mouseover)="callSubDropdown()">Services</a>
+                <li><a class="nav-link  active" routerLink="home" routerLinkActive="badge-primary"   href="" >Home</a></li>
+                <li><a class="nav-link scrollto page-scroll" routerLink="about" routerLinkActive="badge-primary"  href="">About</a></li>
+                <li  (mouseleave)="closeSubDropdown()" ><a class="nav-link scrollto page-scroll nav-link-service" routerLink="service" routerLinkActive="badge-primary"  href="#service"  (mouseover)="callSubDropdown()">Services</a>
                   <div class="sub-dropdown" [class.subMenu]="subMenu"  (mouseover)="callSubDropdown()">
                     <ul class="d-flex " (click)="closeSubDropdown()">
                       <li><a class="nav-link scrollto page-scroll" routerLink="ivr" routerLinkActive="badge-primary"  href="">IVR</a></li>
@@ -34,8 +34,8 @@
                   
                 </li>
                 
-                <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/contact" routerLinkActive="badge-primary"  href="#contact">Contact</a></li>
-                <li><a class="nav-link scrollto page-scroll" routerLink="dashbord/faq"  routerLinkActive="badge-primary" href="#faq">FAQ</a></li>
+                <li><a class="nav-link scrollto page-scroll" routerLink="contact" routerLinkActive="badge-primary"  href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto page-scroll" routerLink="faq"  routerLinkActive="badge-primary" href="#faq">FAQ</a></li>
 
 
                 

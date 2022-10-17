@@ -26,6 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactUsComponent } from './client/contact-us/contact-us.component';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { HttpClientModule } from '@angular/common/http';
+
 // import { RecaptchaModule } from "ng-recaptcha";
 
 // import { BotDetectCaptchaModule } from 'angular-captcha'; 
@@ -64,6 +66,7 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     RecaptchaModule,
     RecaptchaFormsModule,
     NgxCaptchaModule,
+    HttpClientModule
     // BotDetectCaptchaModule
 
   ],

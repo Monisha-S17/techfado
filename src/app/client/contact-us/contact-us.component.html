@@ -48,14 +48,14 @@
           <form  class="php-email-form" #userForm ="ngForm" novalidate (ngSubmit)="onSumbit(userForm)">
             <div class="row">
               <div class="col form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"  autocomplete="off" ngModel required>
+                <input type="text" name="name" class="form-control " id="name" placeholder="Your Name"  autocomplete="off" ngModel required>
               </div>
               <div class="col form-group">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" autocomplete="off" ngModel required email>
               </div>
             </div>
             <div class="col form-group">
-              <input type="number" id="phone" name="phone" class="form-control"   placeholder="+91 98765 43210"  ngModel required>
+              <input type="text" id="phone" name="phone" class="form-control"   placeholder="+91 9876543210"  ngModel required pattern="^(?!0+$)(?:\(?\+\d{1,3}\)?[- ]?|0)?\d{10}$">
             </div>
             <div class="form-group">
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" ngModel required>
@@ -72,7 +72,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit" [disabled]="!userForm.valid" [class.isDisable]="!userForm.valid">Send Message</button></div>
+            <div class="text-center"><button type="button" [class.isDisable] ="!userForm.valid"  >Send Message</button></div>
           </form>
         
         
