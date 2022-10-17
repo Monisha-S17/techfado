@@ -17,9 +17,9 @@
               <ul>
                 <li><a class="nav-link  active" routerLink="home" routerLinkActive="badge-primary"   href="" >Home</a></li>
                 <li><a class="nav-link scrollto page-scroll" routerLink="about" routerLinkActive="badge-primary"  href="">About</a></li>
-                <li  (mouseleave)="closeSubDropdown()" ><a class="nav-link scrollto page-scroll nav-link-service" routerLink="service" routerLinkActive="badge-primary"  href="#service"  (mouseover)="callSubDropdown()">Services</a>
+                <li  (mouseleave)="closeSubDropdown()" (click)="closeSubDropdown()" ><a class="nav-link scrollto page-scroll nav-link-service" routerLink="service" routerLinkActive="badge-primary"  href="#service"  (mouseover)="callSubDropdown()" >Services</a>
                   <div class="sub-dropdown" [class.subMenu]="subMenu"  (mouseover)="callSubDropdown()">
-                    <ul class="d-flex " (click)="closeSubDropdown()">
+                    <ul class="d-flex " (click)="closeDropdown()">
                       <li><a class="nav-link scrollto page-scroll" routerLink="ivr" routerLinkActive="badge-primary"  href="">IVR</a></li>
                       <li><a class="nav-link scrollto page-scroll" routerLink="chat" routerLinkActive="badge-primary"  href="">Chat</a></li>
                       <li><a class="nav-link scrollto page-scroll" routerLink="email" routerLinkActive="badge-primary"  href="">Email</a></li>

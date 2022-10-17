@@ -129,7 +129,10 @@
     margin-top: -3px;
   }
   .sub-dropdown{
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    padding-right: 40px;
+
+    display: none;
   }
   .sub-dropdown ul{
     flex-direction: column;
@@ -137,11 +140,13 @@
   .sub-dropdown ul li{
     border-bottom: 1px solid #aaa;
 
+
   }
   .subMenu{
+    display: block;
     width: 200px;
     left: -160px;
-    top:0px;
+    top:-27px;
   }
   
   
